@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - MIRA AI Doctor Consultant</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #bdeeff;
+      color: #000;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 80px;
+      background-color: transparent;
+    }
+
+    .logo {
+      font-family: 'Ojuju', sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      -webkit-text-stroke: 1px black;
+      text-align: center;
+    }
+
+    .nav-auth-group {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    nav {
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+    }
+
+    nav a.light {
+      font-weight: 300;
+      color: #444;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    nav a.light:hover {
+      color: #0077aa;
+      text-decoration: underline dashed;
+    }
+
+    .auth-buttons {
+      display: flex;
+      gap: 30px;
+    }
+
+    .login {
+      border: 1px solid #000;
+      background: transparent;
+      color: #000;
+      padding: 6px 14px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .signup {
+      background-color: #000;
+      color: #fff;
+      padding: 6px 14px;
+      border-radius: 10px;
+      cursor: pointer;
+      border: none;
+    }
+
+    main {
+      padding: 40px 80px;
+    }
+
+    .about-section {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      justify-content: space-between;
+    }
+
+    .about-text {
+      max-width: 600px;
+    }
+
+    .about-text h2 {
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .about-text p {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .image {
+      transform: translate(-30%, -20px);
+    }
+
+    .image img {
+      width: auto;
+      height: 570px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">MIRA</div>
+    <div class="nav-auth-group">
+      <nav>
+        <a href="index.html" class="light">Home</a>
+        <a href="#" class="light">About</a>
+        <a href="faq.html" class="light">FAQ</a>
+        <a href="feedback.html" class="light">Contact Us</a>
+      </nav>
+      <div class="auth-buttons">
+        <a href="#" class="login" onclick="openLogin()">Login</a>
+        <button class="signup">Sign up</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="about-section">
+      <div class="about-text">
+        <h2>About MIRA</h2>
+        <p><strong>MIRA</strong> is an AI-powered doctor consultant that reimagines digital healthcare through emotionally intelligent, lifelike interactions. Combining natural language processing and a pre-recorded, animated doctor, MIRA engages users in meaningful, accurate consultations.</p>
+        <p>Every interaction—from initial symptom check to diagnosis—is designed to feel like a real conversation, providing warmth and professionalism.</p>
+        <p>Our mission is to bridge technology and empathy to deliver accessible, intelligent care to everyone, everywhere.</p>
+      </div>
+      <div class="image">
+        <img src="..\assets\doctor.png" alt="Doctor Illustration">
+      </div>
+    </section>
+  </main>
+</body>
+</html>

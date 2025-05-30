@@ -1,0 +1,25 @@
+condition	symptoms	duration	severity	risk_factors	suggested_action
+COVID-19	Fever, cough, loss of taste/smell	7-14 days	Moderate	Close contact, weak immunity	Isolation, rest, hydration, consult doctor
+Strep Throat	Sore throat, swollen lymph nodes	5-7 days	Moderate	Close contact, shared utensils	Antibiotics, rest, hydration
+Sinusitis	Facial pain, nasal congestion	10-14 days	Mild	Allergies, respiratory infections	Nasal spray, hydration, steam inhalation
+Bronchitis	Persistent cough, chest discomfort	1-3 weeks	Moderate	Smoking, pollution, viral infections	Rest, fluids, cough medicine
+Pneumonia	Fever, cough, difficulty breathing	Weeks	Severe	Elderly, weak immunity, lung disease	Antibiotics (if bacterial), hospitalization if severe
+Asthma Attack	Wheezing, shortness of breath	Varies	Severe	Allergens, exercise, cold air	Inhaler, avoid triggers, seek emergency help if needed
+Gastroenteritis	Nausea, vomiting, diarrhea	1-3 days	Mild	Contaminated food, viral infections	Hydration, rest, avoid solid foods
+Food Poisoning	Stomach cramps, diarrhea, nausea	6-48 hours	Moderate	Contaminated food	Hydration, bland diet, rest
+GERD	Heartburn, acid reflux	Chronic	Mild	Spicy foods, obesity, smoking	Antacids, lifestyle changes
+Peptic Ulcer	Stomach pain, bloating, nausea	Weeks	Moderate	NSAIDs, stress, H. pylori infection	Antacids, antibiotics, avoid spicy food
+Appendicitis	Sharp lower right abdomen pain, nausea	Hours-days	Severe	Blocked appendix, infection	Emergency surgery
+Kidney Stones	Severe lower back pain, painful urination	Varies	Severe	Dehydration, high salt diet	Hydration, pain relievers, medical removal if needed
+UTI	Frequent urination, burning sensation	3-7 days	Mild	Poor hygiene, dehydration	Antibiotics, hydration
+Anemia	Fatigue, pale skin, dizziness	Chronic	Moderate	Poor diet, iron deficiency	Iron supplements, dietary changes
+Diabetes	Frequent urination, fatigue, thirst	Lifetime	Moderate	Obesity, genetics, poor diet	Insulin, lifestyle changes
+Hypertension	Headaches, dizziness, chest pain	Chronic	Moderate	High salt intake, obesity, stress	Lifestyle changes, medication
+Heart Attack	Chest pain, shortness of breath	Acute	Severe	High cholesterol, smoking, stress	Emergency medical attention
+Stroke	Slurred speech, numbness, confusion	Acute	Severe	Hypertension, smoking, obesity	Emergency medical help, rehabilitation
+Depression	Persistent sadness, loss of interest	Months-years	Moderate	Stress, genetics, trauma	Therapy, medication, lifestyle changes
+Anxiety Disorder	Excessive worry, rapid heartbeat	Chronic	Moderate	Stress, genetics, lifestyle	Therapy, relaxation techniques, medication
+Insomnia	Difficulty sleeping, fatigue	Weeks-months	Mild	Stress, poor sleep habits, caffeine	Sleep hygiene, relaxation techniques
+Arthritis	Joint pain, stiffness	Chronic	Moderate	Aging, genetics, obesity	Pain relievers, physiotherapy, exercise
+Osteoporosis	Bone fractures, posture issues	Chronic	Moderate	Aging, low calcium intake, inactivity	Calcium, vitamin D, weight-bearing exercises
+Tuberculosis	Chronic cough, night sweats, weight loss	Months	Severe	Weak immunity, close contact	Antibiotics, long-term treatment

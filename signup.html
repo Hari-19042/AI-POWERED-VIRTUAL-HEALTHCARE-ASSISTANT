@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up - MIRA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@600&display=swap" rel="stylesheet">
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #bdeeff;
+      color: #000;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 80px;
+    }
+
+    .logo {
+      font-family: 'Ojuju', sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      -webkit-text-stroke: 1px black;
+    }
+
+    .auth-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 50px auto;
+      max-width: 600px;
+    }
+
+    .auth-box {
+      background-color: #fff;
+      width: 100%;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .auth-box h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 28px;
+      color: #222;
+    }
+
+    form input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    form button {
+      width: 20%;
+      background-color: #0077aa;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 14px;
+      transition: background 0.3s ease;
+       transform: translate(210px);
+    }
+
+    form button:hover {
+      background-color: #005e88;
+    }
+
+    .or-divider {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .g_id_signin {
+      display: flex;
+      justify-content: center;
+    }
+
+    .login-link {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .login-link a {
+      color: #0077aa;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .login-link a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .auth-section {
+        padding: 20px;
+      }
+
+      .auth-box {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">MIRA</div>
+  </header>
+
+  <section class="auth-section">
+    <div class="auth-box">
+      <h2>Create an Account</h2>
+      <form>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Sign Up</button>
+      </form>
+
+      <div class="or-divider">or</div>
+      <div class="g_id_signin"
+           data-type="standard"
+           data-shape="pill"
+           data-theme="outline"
+           data-text="signup_with"
+           data-size="large"
+           data-logo_alignment="left">
+      </div>
+
+      <div id="g_id_onload"
+           data-client_id="219707754826-no2qh74pa0tsuecinuf7v8cp0sjvk7ee.apps.googleusercontent.com"
+           data-context="signup"
+           data-ux_mode="popup"
+           data-callback="handleCredentialResponse">
+      </div>
+
+      <div class="login-link">
+        Already have an account? <a href="login.html">Log in</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function handleCredentialResponse(response) {
+      const token = response.credential;
+      console.log("Google JWT Token:", token);
+      alert("Google Sign-In Successful!");
+    }
+  </script>
+
+</body>
+</html>

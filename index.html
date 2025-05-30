@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MIRA - AI Doctor Consultant</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #bdeeff;
+      color: #000;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 80px;
+      background-color: transparent;
+    }
+
+    .logo {
+      font-family: 'Ojuju', sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      -webkit-text-stroke: 1px black;
+      text-align: center;
+    }
+
+    .nav-auth-group {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    nav {
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: hsl(0, 0%, 0%);
+      font-weight: 500;
+      transition: color 0.3s, text-decoration 0.3s;
+    }
+
+    nav a.light {
+      font-weight: 300;
+      color: #444;
+    }
+
+    nav a:not(.light):hover {
+      color: #000;
+      text-decoration: underline;
+    }
+
+    nav a.light:hover {
+      color: #0077aa;
+      text-decoration: underline dashed;
+    }
+
+    .auth-buttons {
+      display: flex;
+      gap: 30px;
+    }
+
+    .login, .signup {
+      padding: 6px 14px;
+      border-radius: 10px;
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .login {
+      border: 1px solid #000;
+      background: transparent;
+      color: #000;
+    }
+
+    .signup {
+      background-color: #000;
+      color: #fff;
+      border: none;
+    }
+
+    main {
+      padding: 8px 80px;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .text-content {
+      max-width: 580px;
+      transform: translateX(5px);
+    }
+
+    .tagline {
+      background: white;
+      padding: 6px 12px;
+      border-radius: 10px;
+      font-weight: 600;
+      display: inline-block;
+      margin-bottom: 16px;
+    }
+
+    .text-content h1 {
+      font-size: 36px;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    .text-content p {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 25px;
+    }
+
+    .start-btn {
+      background-color: #00bfff;
+      color: white;
+      padding: 12px 22px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 17px;
+      transition: background 0.3s;
+    }
+
+    .start-btn:hover {
+      background-color: #009fdc;
+    }
+
+    .image-content {
+      transform: translate(-30%, -20px);
+    }
+
+    .image-content img {
+      width: auto;
+      height: 570px;
+    }
+
+    nav a:first-child {
+      font-weight: 500;
+    }
+
+    nav a:not(:first-child) {
+      font-weight: 300;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">MIRA</div>
+    <div class="nav-auth-group">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about_page.html" class="light">About</a>
+        <a href="faq.html" class="light">FAQ</a>
+        <a href="contact_us.html" class="light">Contact Us</a>
+      </nav>
+      <div class="auth-buttons">
+        <a href="login.html" class="login" onclick="openLogin()">Login</a>
+        <a href="signup.html" class="signup">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="text-content">
+        <span class="tagline">AI-Powered Diagnosis, Human-Centered Care</span>
+        <h1>Precision Healthcare<br/>Delivered Through Intelligent Interaction</h1>
+        <p>Our AI-powered doctor consultant combines advanced natural language processing with lifelike video interactions to deliver accurate, empathetic healthcare guidance. Through intelligent questioning and real-time diagnosis, we’re redefining how people access medical support—making care more personal, precise, and accessible.</p>
+        <a href="login.html" class="start-btn">Start Consultation</a>
+      </div>
+      <div class="image-content">
+        <img src="..\assets\mira_faq.png" alt="2D Doctor Character" />
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

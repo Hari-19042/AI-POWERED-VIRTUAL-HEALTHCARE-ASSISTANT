@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - MIRA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #bdeeff;
+      color: #000;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 80px;
+    }
+
+    .logo {
+      font-family: 'Ojuju', sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      -webkit-text-stroke: 1px black;
+    }
+
+    .nav-auth-group {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    nav {
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #444;
+      font-weight: 300;
+      transition: color 0.3s, text-decoration 0.3s;
+    }
+
+    nav a:hover {
+      color: #0077aa;
+      text-decoration: underline dashed;
+    }
+
+    .auth-buttons {
+      display: flex;
+      gap: 20px;
+    }
+
+    .login {
+      border: 1px solid #000;
+      background: transparent;
+      color: #000;
+      padding: 6px 14px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .signup {
+      background-color: #000;
+      color: #fff;
+      padding: 6px 14px;
+      border-radius: 10px;
+      cursor: pointer;
+      border: none;
+    }
+
+    .contact-section {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      margin: 40px auto;
+      max-width: 1200px;
+    }
+
+    .left {
+      width: 25%;
+      background-color: #bdeeff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .left img {
+      width:auto;
+      height: 500px;
+      object-fit: contain;
+    }
+
+    .contact-main {
+      display: flex;
+      width: 75%;
+      background: #fff;
+      border-top-right-radius: 16px;
+      border-bottom-right-radius: 16px;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .middle {
+      width: 40%;
+      background-color: #e6f7ff;
+      padding: 40px;
+    }
+
+    .middle h3 {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .middle p {
+      margin-bottom: 12px;
+      font-size: 15px;
+    }
+
+    .right {
+      width: 60%;
+      padding: 40px;
+    }
+
+    .right h2 {
+      margin-bottom: 24px;
+      font-size: 28px;
+      color: #222;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    form button {
+      background-color: #0077aa;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 14px;
+      transition: background 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #005e88;
+    }
+
+    @media (max-width: 768px) {
+      .contact-section {
+        flex-direction: column;
+      }
+
+      .left,
+      .contact-main,
+      .middle,
+      .right {
+        width: 100%;
+      }
+
+      .contact-main {
+        flex-direction: column;
+        border-radius: 0 0 16px 16px;
+      }
+
+      .left {
+        border-radius: 16px 16px 0 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+  <div class="logo">MIRA</div>
+  <div class="nav-auth-group">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about_page.html" class="light">About</a>
+      <a href="faq.html" class="light">FAQ</a>
+      <a href="contact_us.html" class="light active">Contact Us</a>
+    </nav>
+    <div class="auth-buttons">
+      <a href="#" class="login" onclick="openLogin()">Login</a>
+      <a href="signup.html" class="signup">Sign up</a>
+    </div>
+  </div>
+</header>
+
+
+  <section class="contact-section">
+    <div class="left">
+      <img src="../assets/mira_contact_us.png" alt="Doctor Icon" />
+    </div>
+    
+    <div class="contact-main">
+      <div class="middle">
+        <h3>Contact Details</h3>
+        <p><strong>Address:</strong><br>123 Dream Street,<br>Hyderabad, Telangana, 500001</p>
+        <p><strong>Phone:</strong><br>+91 98765 43210</p>
+        <p><strong>Email:</strong><br>support@mirahealth.ai</p>
+        <p><strong>Working Hours:</strong><br>Mon - Fri: 9am to 6pm</p>
+      </div>
+
+      <div class="right">
+        <h2>Contact Us</h2>
+        <form>
+          <input type="text" placeholder="First Name" required />
+          <input type="text" placeholder="Last Name" required />
+          <input type="email" placeholder="Email Address" required />
+          <textarea placeholder="Your Message" rows="6" required></textarea>
+          <button type="submit">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQ - MIRA</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #bdeeff;
+      color: #000;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 80px;
+    }
+
+    .logo {
+      font-family: 'Ojuju', sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      -webkit-text-stroke: 1px black;
+    }
+
+    .nav-auth-group {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    nav {
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+      transition: color 0.3s, text-decoration 0.3s;
+    }
+
+    nav a.light {
+      font-weight: 300;
+      color: #444;
+    }
+
+    nav a:not(.light):hover {
+      color: #000;
+      text-decoration: underline;
+    }
+
+    nav a.light:hover {
+      color: #0077aa;
+      text-decoration: underline dashed;
+    }
+
+    .auth-buttons {
+      display: flex;
+      gap: 30px;
+    }
+
+    .auth-buttons a {
+      padding: 6px 14px;
+      border-radius: 10px;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .login {
+      border: 1px solid #000;
+      background: transparent;
+      color: #000;
+    }
+
+    .signup {
+      background-color: #000;
+      color: #fff;
+      border: none;
+    }
+
+    .faq-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 60px 80px;
+      gap: 60px;
+    }
+
+    .faq-section {
+      flex: 2;
+    }
+
+    .faq-section h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      font-weight: 800;
+    }
+
+    .faq-item {
+      background: #fff;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      padding: 16px 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .faq-item:hover {
+      background: #eef9ff;
+    }
+
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    .faq-answer {
+      margin-top: 10px;
+      font-size: 15px;
+      display: none;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .ask-section {
+      flex: 1;
+      text-align: center;
+      background: #fff;
+      padding: 30px 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .ask-section img {
+      max-width: 120px;
+      margin-bottom: 20px;
+    }
+
+    .ask-section h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .ask-section p {
+      font-size: 14px;
+      margin-bottom: 20px;
+      color: #666;
+    }
+
+    .ask-section input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .ask-section button {
+      background: #00bfff;
+      color: #fff;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .ask-section button:hover {
+      background: #009fdc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">MIRA</div>
+    <div class="nav-auth-group">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about_page.html" class="light">About</a>
+        <a href="faq_page.html" class="light">FAQ</a>
+        <a href="contact_us.html" class="light">Contact Us</a>
+      </nav>
+      <div class="auth-buttons">
+        <a href="#" class="login" onclick="openLogin()">Login</a>
+        <a href="signup.html" class="signup">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="faq-container">
+    <div class="faq-section">
+      <h1>Frequently Asked Questions</h1>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          What is MIRA?
+          <span>+</span>
+        </div>
+        <div class="faq-answer">
+          MIRA is an AI-powered doctor consultant that guides users through video-based medical interactions.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          How does MIRA determine which video to show?
+          <span>+</span>
+        </div>
+        <div class="faq-answer">
+          MIRA uses rule-based logic or NLP models to classify user input and map it to the correct pre-recorded video.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          Is MIRA a real doctor?
+          <span>+</span>
+        </div>
+        <div class="faq-answer">
+          No. MIRA is a virtual assistant meant to guide and assist. It does not replace real medical advice.
+        </div>
+      </div>
+    </div>
+
+    <div class="ask-section">
+      <img src="../assets/ask_any_question.jpg" alt="Ask question illustration" />
+      <h2>Any Question?</h2>
+      <p>You can ask anything you want to know about MIRA.</p>
+      <input type="text" placeholder="Enter your question" />
+      <button>Send</button>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.faq-item').forEach(item => {
+      item.addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+
+</body>
+</html>

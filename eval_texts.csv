@@ -1,0 +1,12 @@
+condition,symptoms,duration,severity,risk_factors,suggested_action
+GERD,"Heartburn, acid reflux",Chronic,Mild,"Spicy foods, obesity, smoking","Antacids, lifestyle changes"
+Heart Attack,"Chest pain, shortness of breath",Acute,Severe,"High cholesterol, smoking, stress",Emergency medical attention
+COVID-19,"Fever, cough, loss of taste/smell",7-14 days,Moderate,"Close contact, weak immunity","Isolation, rest, hydration, consult doctor"
+Depression,"Persistent sadness, loss of interest",Months-years,Moderate,"Stress, genetics, trauma","Therapy, medication, lifestyle changes"
+Kidney Stones,"Severe lower back pain, painful urination",Varies,Severe,"Dehydration, high salt diet","Hydration, pain relievers, medical removal if needed"
+Peptic Ulcer,"Stomach pain, bloating, nausea",Weeks,Moderate,"NSAIDs, stress, H. pylori infection","Antacids, antibiotics, avoid spicy food"
+Anemia,"Fatigue, pale skin, dizziness",Chronic,Moderate,"Poor diet, iron deficiency","Iron supplements, dietary changes"
+Strep Throat,"Sore throat, swollen lymph nodes",5-7 days,Moderate,"Close contact, shared utensils","Antibiotics, rest, hydration"
+Arthritis,"Joint pain, stiffness",Chronic,Moderate,"Aging, genetics, obesity","Pain relievers, physiotherapy, exercise"
+Asthma Attack,"Wheezing, shortness of breath",Varies,Severe,"Allergens, exercise, cold air","Inhaler, avoid triggers, seek emergency help if needed"
+Sinusitis,"Facial pain, nasal congestion",10-14 days,Mild,"Allergies, respiratory infections","Nasal spray, hydration, steam inhalation"
